@@ -13,6 +13,12 @@ body {
   background-color: #181719;
   font-size: 14px; }
 
+.masthead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
 .masthead__heading {
   text-transform: uppercase;
   font-size: 14px;
@@ -38,4 +44,12 @@ body {
   color: #FFFFFF; }
 
 nav {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 28.5px;
+  height: 19px;
+  cursor: pointer; }
+
+nav li {
   display: none; }
