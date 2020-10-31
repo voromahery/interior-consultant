@@ -1,3 +1,27 @@
-header {
-    color: yellow;
+.masthead__heading {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px;
+    border: solid 1px #FFFFFF;
+    max-width: max-content;
+}
+
+.header__article--heading {
+    font-size: 36px;
+}
+
+.header__article--paragraph {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+.header__article--paragraph,
+.more {
+    line-height: 17px;
+}
+
+.more {
+    text-decoration: none;
+    font-weight: 600;
+    color: #FFFFFF;
 }
