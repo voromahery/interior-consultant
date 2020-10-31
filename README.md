@@ -8,6 +8,7 @@ Challenge: Create a homepage following the design. The page should be responsive
 -   User story: I can see a page following the given design
 -   User story: On mobile, I can see a collapsed navigation
 -   User story: On mobile, when I select the hamburger menu, I can see a navigation
+-   Technical requirement : use **BEM** notation with **SASS** to practice your skills
 
 Icon: https://google.github.io/material-design-icons/
 
