@@ -9,7 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "css": "node-sass scss -o webroot/css",
-    "css:watch": "npm run css && node-sass scss -w -o webroot/css"
+    "css:watch": "npm run css && node-sass scss -w -o webroot/css",
+    "start": "parcel ./webroot/index.html"
   },
   "repository": {
     "type": "git",
