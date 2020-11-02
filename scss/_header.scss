@@ -32,3 +32,12 @@
     font-weight: 600;
     color: #FFFFFF;
 }
+
+.more::after {
+    content: "";
+    background-image: url("../images/arrow_right.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 7px;
+}
