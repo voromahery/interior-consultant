@@ -44,12 +44,41 @@ body {
   color: #FFFFFF; }
 
 nav {
+  background-image: url("../images/menu.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 28.5px;
+  width: 32px;
   height: 19px;
   cursor: pointer; }
 
 nav li {
   display: none; }
+
+.profile__card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.profile__person--image {
+  padding: 16px;
+  max-width: 35px;
+  border-radius: 50%; }
+
+.person__about {
+  display: flex;
+  flex-direction: column; }
+
+.profile__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+footer {
+  text-align: center;
+  border-top: solid 1px #A9A9A9; }
+
+footer a {
+  color: #A9A9A9;
+  text-decoration: none; }
+
+footer a:hover {
+  text-decoration: underline; }
