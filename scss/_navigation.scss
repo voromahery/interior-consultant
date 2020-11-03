@@ -30,6 +30,8 @@ nav {
 
 .nav__wrapper {
     position: relative;
+    width: 29px;
+    height: 29px;
 }
 
 .nav__wrapper > [type="checkbox"]:checked ~ nav {

@@ -77,7 +77,9 @@ nav {
   transform: translateY(50%); }
 
 .nav__wrapper {
-  position: relative; }
+  position: relative;
+  width: 29px;
+  height: 29px; }
 
 .nav__wrapper > [type="checkbox"]:checked ~ nav {
   display: none; }
