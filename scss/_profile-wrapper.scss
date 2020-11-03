@@ -14,6 +14,7 @@ figure img {
     transform: translateY(-195px);
     left: 15%;
     width: 80%;
+    z-index: 1;
 }
 
 .profile__person--image {
@@ -30,6 +31,7 @@ figure img {
 .profile__wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 

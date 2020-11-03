@@ -52,7 +52,18 @@ body {
   height: 7px; }
 
 nav {
-  display: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 19px;
+  z-index: 2;
+  display: none; }
+
+.masthead {
+  position: relative; }
+
+nav {
   background-color: #181719;
   position: fixed;
   top: 0;
@@ -60,11 +71,7 @@ nav {
   right: 0;
   width: 100vw;
   height: 100vh;
-  text-align: center;
-  cursor: pointer; }
-
-.masthead {
-  position: relative; }
+  text-align: center; }
 
 .navigation__list {
   transform: translateY(50%); }
@@ -72,36 +79,30 @@ nav {
 .nav__wrapper {
   position: relative; }
 
-.nav__wrapper [type="checkbox"]:checked ~ nav {
-  display: block; }
+.nav__wrapper > [type="checkbox"]:checked ~ nav {
+  display: none; }
 
 .menu-toggler {
   background-image: url("../images/menu.svg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: -9999px;
   width: 29px;
-  height: 29px; }
+  height: 29px;
+  cursor: pointer; }
 
-.nav__wrapper [type="checkbox"]:checked ~ .masthead .menu-toggler {
-  display: none; }
+.nav__wrapper [type="checkbox"]:checked ~ nav {
+  display: block; }
 
-.menu-toggler > [type="checkbox"]:checked ~ mast {
+[type="checkbox"]:checked ~ .menu-toggler {
   background-image: url("../images/clear.svg");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  text-indent: -9999px;
-  width: 22px;
-  height: 22px; }
-
-.menu-toggler {
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   right: 0;
   text-indent: -9999px;
@@ -136,7 +137,8 @@ figure img {
   background-color: black;
   transform: translateY(-195px);
   left: 15%;
-  width: 80%; }
+  width: 80%;
+  z-index: 1; }
 
 .profile__person--image {
   padding: 16px;
@@ -150,6 +152,7 @@ figure img {
 .profile__wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center; }
 
 .date {
