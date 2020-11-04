@@ -38,30 +38,108 @@ body {
 .more {
   line-height: 17px; }
 
+.more-info {
+  margin-bottom: 25px;
+  margin-top: 25px; }
+
 .more {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-weight: 600;
   color: #FFFFFF; }
 
-.more::after {
-  content: "";
-  background-image: url("/arrow_right.92b369d4.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 18px;
-  height: 7px; }
+.arrow-right {
+  padding-left: 15px; }
 
 nav {
-  background-image: url("/menu.2b71b4ce.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  font-size: 18px;
   width: 32px;
   height: 19px;
+  z-index: 2;
+  display: none; }
+
+.masthead {
+  position: relative; }
+
+nav {
+  background-color: #181719;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center; }
+
+.navigation__list {
+  transform: translateY(50%); }
+
+.nav__wrapper {
+  position: relative;
+  width: 29px;
+  height: 29px; }
+
+.nav__wrapper > [type="checkbox"]:checked ~ nav {
+  display: none; }
+
+.menu-toggler {
+  background-image: url("/43edad825757bd377e6d98c42b71b4ce.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: -9999px;
+  width: 29px;
+  height: 29px;
   cursor: pointer; }
 
+.nav__wrapper [type="checkbox"]:checked ~ nav {
+  display: block; }
+
+[type="checkbox"]:checked ~ .menu-toggler {
+  background-image: url("/7b3af48a90c3da345e374c7ebc146587.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  text-indent: -9999px;
+  width: 29px;
+  height: 29px;
+  cursor: pointer; }
+
+#show-menu {
+  position: absolute;
+  display: none; }
+
+.navigation__list-item {
+  padding: 16px; }
+
+.navigation__list-item:nth-of-type(1) {
+  font-weight: 700; }
+
+.list__item--link {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+.wrapper {
+  position: relative; }
+
+figure img {
+  padding-bottom: 138px; }
+
 .profile__card {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 80%;
+  position: absolute;
+  background-color: black;
+  transform: translateY(-195px);
+  left: 15%;
+  width: 80%;
+  z-index: 1; }
 
 .profile__person--image {
   padding: 16px;
@@ -75,7 +153,18 @@ nav {
 .profile__wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center; }
+
+.person__about--name {
+  font-size: 12px; }
+
+.person__about--job {
+  font-size: 10pxs; }
+
+.date {
+  margin: 0;
+  padding: 16px; }
 
 footer {
   text-align: center;
