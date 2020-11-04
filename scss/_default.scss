@@ -1,3 +1,5 @@
+@import "./variable";
+
 ul {
     list-style: none;
     padding: 0;
@@ -15,4 +17,18 @@ body {
     color: #FFFFFF;
     background-color: #181719;
     font-size: 14px;
+}
+
+
+
+@media (min-width: $large-breakpoint) {
+    body {
+        padding-left: 77px;
+        padding-right: 77px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
 }

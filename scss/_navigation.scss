@@ -1,3 +1,5 @@
+@import "./variable";
+
 nav {
     font-size: 18px;
     width: 32px;
@@ -40,7 +42,6 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    // z-index: ;
     top: 0;
     right: 0;
     text-indent: -9999px;
@@ -86,6 +87,44 @@ nav {
     color: #FFFFFF;
 }
 
-// nav li {
-//     display: none;
-// }
+@media (min-width: $medium-breakpoint) {
+    .masthead__heading {
+        flex-basis: 50%;
+    }
+
+    nav {
+        background-image: unset;
+        display: block;
+        width: unset;
+        height: unset;
+        z-index: unset;
+        position: unset;
+        width: unset;
+        height: unset;
+        text-align: unset;
+        background-color: transparent;
+    }
+
+    .nav__wrapper {
+        position: unset;
+        width: unset;
+        height: unset;
+        flex-basis: 50%;
+    }
+
+    .navigation__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        transform: unset;
+    }
+
+    .navigation__list-item {
+        padding: 0;
+    }
+
+    .menu-toggler {
+        display: none;
+    }
+}

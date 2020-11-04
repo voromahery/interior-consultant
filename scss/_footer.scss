@@ -11,3 +11,9 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+@media (min-width: $large-breakpoint) {
+    footer {
+        border-top: unset;
+    } 
+}
