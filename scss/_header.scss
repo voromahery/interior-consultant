@@ -46,3 +46,23 @@
 .arrow-right {
     padding-left: 15px;
 }
+
+@media (min-width: $large-breakpoint) {
+    .header {
+        flex-basis: 35%;
+    }
+
+    .header__article--heading {
+        font-size: 48px;
+    }
+
+    .header__article--paragraph {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .more {
+        font-size: 18px;
+    }
+
+}
