@@ -2,10 +2,6 @@
     position: relative;
 }
 
-// figure img {
-//     padding-bottom: 138px;
-// }
-
 .profile__card {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 80%;
@@ -39,11 +35,20 @@
     font-size: 12px;
 }
 
+.person__about--name,
 .person__about--job {
-    font-size: 10pxs;
+    font-family: 'myMontserrat';
+    font-weight: 500;
+}
+
+.person__about--job {
+    font-size: 10px;
+    color: #828282;
 }
 
 .date {
+    font-family: 'myLora';
+    font-weight: 700;
     margin: 0;
     padding: 16px;
 }
@@ -52,5 +57,17 @@
 @media (min-width: $large-breakpoint) {
     .image-wrapper {
             flex-basis: 65%;
+        }
+
+        .date {
+            font-size: 24px;
+        }
+
+        .person__about--name {
+            font-size: 14px;
+        }
+        
+        .person__about--job {
+            font-size: 12pxs;
         }
     }
