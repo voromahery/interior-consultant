@@ -1,9 +1,14 @@
 @import "./variable";
 
 body {
-  padding-left: 14px;
-  padding-right: 14px;
-}
+    color: #ffffff;
+    background-color: #181719;
+    font-size: 14px;
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 
 ul {
   list-style: none;
@@ -15,14 +20,6 @@ img {
 }
 
 figure {
-  margin: auto;
-}
-
-body {
-  color: #ffffff;
-  background-color: #181719;
-  font-size: 14px;
-  max-width: 1440px;
   margin: auto;
 }
 
