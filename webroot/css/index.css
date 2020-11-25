@@ -33,6 +33,10 @@
   src: url("../fonts/montserrat-bold.woff2"), url("../fonts/montserrat-bold.woff");
   font-weight: 700; }
 
+body {
+  padding-left: 14px;
+  padding-right: 14px; }
+
 ul {
   list-style: none;
   padding: 0; }
@@ -44,7 +48,7 @@ figure {
   margin: auto; }
 
 body {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #181719;
   font-size: 14px;
   max-width: 1440px;
@@ -53,6 +57,11 @@ body {
 main {
   margin-bottom: 138px;
   margin-top: 38px; }
+
+@media (min-width: 650px) {
+  body {
+    padding-left: 35px;
+    padding-right: 35px; } }
 
 @media (min-width: 1100px) {
   body {
